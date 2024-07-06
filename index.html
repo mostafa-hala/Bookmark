@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/65721112fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Bookmarker</h1>
+        <div class="dot-line"></div>
+        <p class="subtitle"><i class="fas fa-bookmark"></i> Bookmark your favorite sites <i class="fas fa-bookmark"></i></p>
+        <form id="websiteForm">
+            <label for="siteName"><i class="fas fa-bookmark"></i> Site Name</label>
+            <input type="text" id="siteName" placeholder="Bookmark Name" required>
+            <label for="siteUrl"><i class="fas fa-link"></i> Site URL</label>
+            <input type="url" id="siteUrl" placeholder="Website URL" required>
+            <button type="submit"  id="addbtn">Submit</button>
+        </form>
+        <div id="websites">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="websitesBody">
+                    <!-- Dynamically generated content goes here by js-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
